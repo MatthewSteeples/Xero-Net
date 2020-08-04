@@ -19,7 +19,7 @@ namespace Xero.Api.Core.Model
         [DataMember(EmitDefaultValue = false)]
         public string Name { get; set; }
 
-        [DataMember(EmitDefaultValue = false)]
+        [DataMember(EmitDefaultValue = true)]
         public string ContactNumber { get; set; }
 
         [DataMember(EmitDefaultValue = false)]
