@@ -5,8 +5,7 @@ using Xero.Api.Infrastructure.Model;
 namespace Xero.Api.Infrastructure.Exceptions
 {
     [Serializable]
-    public class BadRequestException
-        : XeroApiException
+    public class BadRequestException : XeroApiException
     {
         public BadRequestException() { }
 
@@ -15,6 +14,10 @@ namespace Xero.Api.Infrastructure.Exceptions
         {
             ErrorNumber = apiException.ErrorNumber;
             Type = apiException.Type;            
+        }
+
+        public BadRequestException(string message) : base(message)
+        {
         }
 
         public int ErrorNumber { get; private set; }

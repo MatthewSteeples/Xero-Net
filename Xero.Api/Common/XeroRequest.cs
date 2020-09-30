@@ -20,7 +20,7 @@ namespace Xero.Api.Common
             get { return this; }
         }
 
-        public bool ContainsItems()
+        public virtual bool ContainsItems()
         {
             return this.Any();
         }
